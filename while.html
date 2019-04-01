@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let i = 1;//in ra số dòng
+    let j = 1;// in ra giá trị của từng cột trên 1 dòng
+    let sout = "<table border = '1' width = '300' cellspacing = '0' cellpadding = '3'>";// biến của bảng
+    while (i < 11) {
+        while (j < 11) {
+            sout = sout + "<td>" + i*j + "</td>"; // bảng = bảng + data (i*j)
+            j++;
+        }
+        sout = sout + "<tr></tr>";
+        j = 1; // tại sao ở đây j = 1??
+        i ++;
+    }
+    sout = sout + "</table>"; // không có cx k sao
+    document.write(sout);
+</script>
+</body>
+</html>
